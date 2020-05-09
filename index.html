@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <title>Module 3</title>
+</head>
+<body>
+<h1>Hangman</h1>
+
+<div id ="welcomeScreen">
+    <form id= "difficultySelection">
+    Choose a Difficulty <br/>
+    <select id="difficulty">
+        <option value="easy"> Easy </option>
+        <option value="medium"> Medium </option>
+        <option value="hard"> Hard </option>
+    </select>
+    <input type="submit" value="Play"/>
+    </form>
+</div>
+
+<div id="gameScreen" class="hidden">
+
+    <form id="gameForm">
+        <canvas id="canvas"></canvas>
+        <br/><br/><br/>
+        <div id="hangManWord"></div>
+        <div id=wordLetters></div>
+        <br/><br/><br/>
+        <label for="userInput">
+            <input type="text" id="userInput">
+        </label>
+        
+        <input type="submit" id = "guessButton" value="Guess!">
+
+    </form>
+    
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
